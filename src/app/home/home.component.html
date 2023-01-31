@@ -1,0 +1,103 @@
+<div>
+    <div id="details">
+        <div class="info" id="info" *ngIf="choice != -1">
+            <div class="close">
+                <span class="material-icons" (click)="closeExperience()">close</span>
+            </div>
+
+            <p>{{completeDetails[choice].year}}</p>
+            <h4>{{completeDetails[choice].title}}</h4>
+            <h5>{{completeDetails[choice].company}}</h5>
+
+            <h3>{{completeDetails[choice].description}}</h3>
+
+            <ul>
+                <li *ngFor="let a of completeDetails[choice].work;">
+                    {{a}}
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <app-nav-bar></app-nav-bar>
+
+    <div id="heroBanner">
+        <div class="box">
+            <p>Scroll Down</p>
+        </div>
+        <div class="box">
+            <div>
+                <h2>Alexander "ALX" <br/>Atkins</h2>
+                <br/>
+                <p>Artist Management</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="text">
+        Alexander "ALX" Atkins is a 23 year old creative with a bi-coastal presence in New York City and Los Angeles. and a strong interest in creative direction, video production, music, fashion, and artist development.
+        <br/><br/>
+        Having received a bachelors degree in finance from the ross school of business and having worked as an analyst at financial consulting firms such as
+        freddie mac and stewart commercial group, alx brings his financial skills and strong sense of process to the creative industries.
+    </div>
+
+    <div id="images">
+        <div class="firstSet" id="firstSet">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="secondSet" id="secondSet">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div class="text">
+        Within a year, ALX moved to Los Angeles to work as an A&R scout for the senior director of A&R at pulse music group.as well as a management coordinator for culture collective and a production assistant for dick clark productions.
+        <br/><br/>
+        His passion and knowledge for all things pop culture (music, art, videos, artists, directors, producers, fashion, digital and current trends). drive him to execute all creative, marketing, and operational tasks needed to aid talent and executives and produce potent art.
+    </div>
+
+    
+    <div class="experience" id="experience">
+        <h3>Experience</h3>
+        <div class="right">
+            <div *ngFor="let a of completeDetails; let index = index">
+                <p>{{completeDetails[index].year}}</p>
+                <h4 *ngIf="choice == -1" (click)="openExperience(index)">{{completeDetails[index].title}} <span class="material-icons">keyboard_backspace</span></h4>
+                <h4 *ngIf="choice != -1">{{completeDetails[index].title}} <span class="material-icons">keyboard_backspace</span></h4>
+                <h5>{{completeDetails[index].company}}</h5>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="largeImage"></div>
+
+    <div class="getInTouch">
+        <div>
+            <div class="innerText">
+                <p>Want to Talk?</p>
+                <a href="/contact">
+                    <h3>Let's get in Touch  <span class="material-icons">keyboard_backspace</span></h3>
+                </a>
+            </div>
+        </div>
+        <div id="simple_arc">
+            <span class='w0'>S</span>
+            <span class='w1'>I</span>
+            <span class='w2'>M</span>
+            <span class='w3'>P</span>
+            <span class='w4'>L</span>
+            <span class='w5'>E</span>
+            <span class='w6'> </span>
+            <span class='w7'>A</span>
+            <span class='w8'>R</span>
+            <span class='w9'>C</span>
+     </div>
+    </div>
+</div>

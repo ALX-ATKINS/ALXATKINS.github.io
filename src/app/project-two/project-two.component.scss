@@ -1,0 +1,52 @@
+
+.padphone {
+    margin: 5% 5.5%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 2.7fr 1fr;
+
+    div {
+        width: 100%;
+        display: grid;
+        place-items: center;
+
+        &:nth-child(1) {
+            .phoneimage, .video {
+                margin-top: 0.5%;
+                border-radius: 6% / 6%;
+            }
+        }
+ 
+        section {
+            height: 92%;
+            width: 100%;
+            position: relative;
+            display: grid;
+            justify-items: center;
+        }
+        
+        .bgimage {
+            position: absolute;
+            top: 0;
+            z-index: 2;
+            height: 100%;
+        }
+        
+        .phoneimage {
+            position: absolute;
+            top: 0;
+            height: 97%;
+            z-index: 1;
+            margin-top: 2%;
+            border-radius: 10% / 5%;
+        }
+        
+        .video {
+            position: absolute;
+            top: 0;
+            height: 97%;
+            margin-top: 2%;
+            border-radius: 10% / 5%;
+        }
+    }
+}

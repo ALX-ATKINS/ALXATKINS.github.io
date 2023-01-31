@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700&display=swap');
+
+@import 'material-icons/iconfont/material-icons.scss';
+
+* {
+    --red: #D40000;
+    --white: #ffffff;
+    --black: #000000;
+    --grey: rgb(13, 14, 19, 0.60);
+    margin: 0;
+    padding: 0;
+    --gap: 1rem;
+    --duration: 40s;
+    --scroll-start: 0;
+    --scroll-end: calc(-100% - var(--gap));
+
+    --experienceDiv: 40%;
+}
+
+body {
+    font-family: 'Unbounded', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

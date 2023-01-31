@@ -1,0 +1,57 @@
+
+
+.phonephone {
+    margin: 8% 20%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .smallphonePreview {
+        &:nth-child(1) {
+            transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -80, 0, 1);
+        }
+
+        &:nth-child(1) {
+            transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 80, 0, 1);
+        }
+    }
+
+    div {
+        width: 100%;
+        display: grid;
+        place-items: center;
+ 
+        section {
+            height: 92%;
+            width: 100%;
+            position: relative;
+            display: grid;
+            justify-items: center;
+        }
+        
+        .bgimage {
+            position: absolute;
+            top: 0;
+            z-index: 2;
+            height: 100%;
+        }
+        
+        .phoneimage {
+            position: absolute;
+            top: 0;
+            height: 97%;
+            z-index: 1;
+            margin-top: 2%;
+            border-radius: 10% / 5%;
+
+        }
+        
+        .video {
+            position: absolute;
+            top: 0;
+            height: 97%;
+            margin-top: 2%;
+            border-radius: 10% / 5%;
+        }
+    }
+}

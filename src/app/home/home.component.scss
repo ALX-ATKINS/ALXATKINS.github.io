@@ -1,0 +1,295 @@
+
+#details {
+    position: absolute;
+    z-index: 2;
+    width: 0%;
+    right: 0;
+    background-color: var(--red);
+    height: 100vw;
+    position: fixed;
+    -moz-transition: all .7s cubic-bezier(0.77, 0, 0.175, 0);
+    -o-transition: all .7s cubic-bezier(0.77, 0, 0.175, 0);
+    -webkit-transition: all .7s cubic-bezier(0.77, 0, 0.175, 0);
+    transition: all .7s cubic-bezier(0.77, 0, 0.175, 0);
+    color: white;
+    
+    .info {
+        padding: 7% 10%;
+        display: grid;
+        opacity: 0;
+        -moz-transition: all .4s cubic-bezier(0.77, 0, 0.175, 0);
+        -o-transition: all .4s cubic-bezier(0.77, 0, 0.175, 0);
+        -webkit-transition: all .4s cubic-bezier(0.77, 0, 0.175, 0);
+        transition: all .4s cubic-bezier(0.77, 0, 0.175, 0);
+
+        .close {
+            width: 100%;
+            margin-bottom: 5%;
+            cursor: pointer;
+            span {
+                float: right;
+            }
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 0.9rem;
+            margin-bottom: 1.8rem;
+        }
+
+        h4 {
+            font-weight: 400;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h5 {
+            font-weight: 300;
+            font-size: 1rem;
+            margin-bottom: 2.2rem;
+        }
+
+        h3 {
+            font-weight: 300;
+            font-size: 0.9rem;
+            line-height: 1.7rem;
+            margin-bottom: 4.5rem;
+        }
+
+        ul {
+            padding: 0 4%;
+            font-weight: 300;
+            font-size: 0.8rem;
+            line-height: 1.7rem;
+            
+            li:not(:last-child) {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+}
+
+
+
+#heroBanner {
+    flex: 1;
+    height: 92vh;
+    padding: 0 5%;
+    background-color: var(--red);
+    color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    text-transform: uppercase;
+
+    .box {
+        height: 89%;
+        display: grid;
+        align-items: flex-end;
+        &:nth-child(1) p {
+            font-size: 0.85rem;
+        }
+        &:nth-child(2) {
+            justify-content: flex-end;
+            text-align: right;
+            p {
+                font-size: 1.2rem;
+                font-weight: 300;
+            }
+            h2 {
+                width: 100%;
+                font-size: 5.7rem;
+                line-height: 1.5em;
+                margin: 0;
+                font-weight: 400;
+            }
+        }
+    }
+    
+}
+
+
+.text {
+    color: var(--grey);
+    font-weight: 300;
+    margin: 6% 0;
+    margin-left: 30%;
+    width: 45%;
+    line-height: 40px;
+}
+
+#images {
+    height: 82vh;
+    margin: 8% 0;
+    display: grid;
+    overflow: hidden;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 3%;
+
+    .firstSet {
+        width: 110%;
+        transform: translateX(-0%);
+        display: grid;
+        grid-template-columns: 1fr 2.5fr 1.8fr 1fr;
+        column-gap: 1.5%;
+        align-items: flex-end;
+
+        div {
+            background-size: cover;
+            background-position: bottom;
+            background-repeat: no-repeat;
+
+            &:nth-child(1), &:nth-child(4) {
+                height: 50%;
+                background-image: url("https://img2.storyblok.com/650x366/filters:format(webp):quality(70)/f/133769/2858x1608/ea3181bca7/ali-ali-mood-1.jpg");
+            }
+            &:nth-child(2) {
+                height: 100%;
+                background-image: url("https://img2.storyblok.com/650x366/filters:format(webp):quality(70)/f/133769/2594x1460/ab9f7cff75/ali-ali-mood-2.jpg");
+            }
+            &:nth-child(3) {
+                height: 75%;
+                background-image: url("https://img2.storyblok.com/650x366/filters:format(webp):quality(70)/f/133769/2081x1171/33fb3099a0/ali-ali-mood-8.jpg");
+            }
+        }
+    }
+
+    .secondSet {
+        display: grid;
+        width: 110%;
+        transform: translateX(-9%);
+        grid-template-columns: 1fr 1.8fr 2.5fr 1fr;
+        column-gap: 1.5%;
+        align-items: flex-start;
+
+        div {
+            background-size: cover;
+            background-position: bottom;
+            background-repeat: no-repeat;
+
+            &:nth-child(1), &:nth-child(4) {
+                height: 50%;
+                background-image: url("https://img2.storyblok.com/650x366/filters:format(webp):quality(70)/f/133769/2858x1608/ea3181bca7/ali-ali-mood-1.jpg");
+            }
+            &:nth-child(2) {
+                height: 75%;
+                background-image: url("https://img2.storyblok.com/650x366/filters:format(webp):quality(70)/f/133769/2594x1460/ab9f7cff75/ali-ali-mood-2.jpg");
+            }
+            &:nth-child(3) {
+                height: 100%;
+                background-image: url("https://img2.storyblok.com/650x366/filters:format(webp):quality(70)/f/133769/2081x1171/33fb3099a0/ali-ali-mood-8.jpg");
+            }
+        }
+    }
+}
+
+.experience {
+    margin: 10% 13%;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+
+    h3 {
+        font-weight: 400;
+        display: grid;
+        padding: 0 15%;
+        font-size: 1.5rem;
+    }
+
+    .right {
+        display: grid;
+        row-gap: 3.2rem;
+    
+        p {
+            margin: 0;
+            font-weight: 300;
+            font-size: 0.85rem;
+            margin-bottom: 3%;
+            color: var(--grey);
+        }
+    
+        h4 {
+            font-weight: 400;
+            font-size: 1.2rem;
+            cursor: pointer;
+
+            span {
+                transform: rotate(135deg);
+                font-size: 1.15rem;
+                -moz-transition: all .2s cubic-bezier(0.77, 0, 0.175, 0);
+                -o-transition: all .2s cubic-bezier(0.77, 0, 0.175, 0);
+                -webkit-transition: all .2s cubic-bezier(0.77, 0, 0.175, 0);
+                transition: all .2s cubic-bezier(0.77, 0, 0.175, 0);
+            }
+
+            &:hover {
+                span {
+                    transform: translate(3px, -3px) rotate(135deg);
+                }
+            }
+        }
+    
+        h5 {
+            font-weight: 300;
+            margin-top: 1.5%;
+            font-size: 0.95rem;
+            color: var(--grey);
+        }
+    }
+}
+
+.largeImage {
+    width: 100%;
+    background-color: orange;
+    height: 93vh;
+}
+
+.getInTouch {
+    padding: 0 5%;
+    background-color: var(--red);
+    color: var(--white);
+    height: 35vh;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding-bottom: 8%;
+    align-items: end;
+
+    div {
+        &:nth-child(1) {
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+            h3 {
+                font-size: 3rem;
+                margin: 0;
+                font-weight: 400;
+            
+                span {
+                    transform: rotate(135deg);
+                    font-size: 2.5rem;
+                    -moz-transition: all .2s cubic-bezier(0.77, 0, 0.175, 0);
+                    -o-transition: all .2s cubic-bezier(0.77, 0, 0.175, 0);
+                    -webkit-transition: all .2s cubic-bezier(0.77, 0, 0.175, 0);
+                    transition: all .2s cubic-bezier(0.77, 0, 0.175, 0);
+                }
+
+                &:hover span {
+                    transform: translate(3px, -3px) rotate(135deg);
+                    -moz-transition: all .2s cubic-bezier(0.77, 0, 0.175, 0);
+                    -o-transition: all .2s cubic-bezier(0.77, 0, 0.175, 0);
+                    -webkit-transition: all .2s cubic-bezier(0.77, 0, 0.175, 0);
+                    transition: all .2s cubic-bezier(0.77, 0, 0.175, 0);
+                }
+            }
+            p {
+                margin-bottom: 2%;
+            }
+        }
+        &:nth-child(2) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightblue;
+        }
+    }
+}
