@@ -74,7 +74,7 @@
 
             div {
                 width: 75%;
-                background-image: url("https://img2.storyblok.com/650x366/filters:format(webp):quality(70)/f/133769/2081x1171/33fb3099a0/ali-ali-mood-8.jpg");
+                background-image: url("../../assets/dickClark/ama/ama_1.jpg");
             }
         }
 
@@ -92,7 +92,8 @@
 
                 div {
                     &:nth-child(1) {
-                        background-image: url("https://img2.storyblok.com/650x366/filters:format(webp):quality(70)/f/133769/2081x1171/33fb3099a0/ali-ali-mood-8.jpg");
+                        background-image: url("../../assets/dickClark/ama/ama_6.jpeg");
+                        background-position: top;
                     }
 
                     &:nth-child(2) {
@@ -101,7 +102,7 @@
                         div {
                             width: 60%;
                             height: 80%;
-                            background-image: url("https://img2.storyblok.com/650x366/filters:format(webp):quality(70)/f/133769/2081x1171/33fb3099a0/ali-ali-mood-8.jpg");
+                            background-image: url("../../assets/dickClark/ama/ama_7.jpeg");
                         }
                     }
                 }
@@ -114,12 +115,14 @@
 
                 div {
                     &:nth-child(1) {
-                        background-image: url("https://img2.storyblok.com/650x366/filters:format(webp):quality(70)/f/133769/2081x1171/33fb3099a0/ali-ali-mood-8.jpg");
+                        background-position: top;
+                        background-image: url('../../assets/dickClark/ama/ama_4.jpeg');
                     }
 
                     &:nth-child(2) {
                         width: 90%;
-                        background-image: url("https://img2.storyblok.com/650x366/filters:format(webp):quality(70)/f/133769/2081x1171/33fb3099a0/ali-ali-mood-8.jpg");
+                        background-image: url("../../assets/dickClark/ama/ama_3.png");
+                        background-position: 10%, 10%;
                     }
                 }
             }
@@ -137,17 +140,19 @@
             background-repeat: no-repeat;
             
             &:nth-child(1) {
-                background-image: url("https://img2.storyblok.com/650x366/filters:format(webp):quality(70)/f/133769/2081x1171/33fb3099a0/ali-ali-mood-8.jpg");
+                background-image: url('../../assets/dickClark/ama/ama_5.jpeg');
+                background-position: top;
             }
 
             &:nth-child(2) {
-                background-image: url("https://img2.storyblok.com/650x366/filters:format(webp):quality(70)/f/133769/2081x1171/33fb3099a0/ali-ali-mood-8.jpg");
+                background-image: url("../../assets/dickClark/ama/ama_9.jpeg");
             }
 
             &:nth-child(3) {
                 width: 70%;
-                height: 80%;
-                background-image: url("https://img2.storyblok.com/650x366/filters:format(webp):quality(70)/f/133769/2081x1171/33fb3099a0/ali-ali-mood-8.jpg");
+                height: 80%;  
+                background-image: url("../../assets/dickClark/ama/ama_2.jpg");
+                background-position: top;
             }
         }
     }
