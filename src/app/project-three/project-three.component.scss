@@ -1,0 +1,154 @@
+
+
+.phonephone {
+    margin: 7% 13%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .smallphonePreview {
+        &:nth-child(1) {
+            transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 40, 0, 1);
+        }
+
+        &:nth-child(3) {
+            transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -40, 0, 1);
+        }
+    }
+
+    div {
+        width: 100%;
+        display: grid;
+        place-items: center;
+ 
+        section {
+            height: 92%;
+            position: relative;
+            display: grid;
+            justify-items: center;
+
+            .phoneimage {
+                background-color: black;
+            }
+        }
+        
+        .bgimage {
+            position: absolute;
+            top: 0;
+            z-index: 2;
+            height: 100%;
+        }
+        
+        .phoneimage {
+            position: absolute;
+            top: 0;
+            height: 98%;
+            z-index: 1;
+            margin-top: 2%;
+            border-radius: 15% / 5%;  
+        }
+    }
+}
+
+.collage {
+    margin: 3% 6% 6% 6%;
+    height: 83vh;
+    display: grid;
+    grid-template-rows: 3.5fr 2fr;
+    row-gap: 1rem;
+
+    .top {
+        display: grid;
+        grid-template-columns: 2fr 4fr;
+        column-gap: 1rem;
+
+        div {
+            background-size: cover;
+            background-position: bottom;
+            background-repeat: no-repeat;
+        }
+
+        .left {
+            display: grid;
+            justify-items: end;
+
+            div {
+                width: 75%;
+                background-image: url("https://img2.storyblok.com/650x366/filters:format(webp):quality(70)/f/133769/2081x1171/33fb3099a0/ali-ali-mood-8.jpg");
+            }
+        }
+
+        .right {
+            display: grid;
+            height: 100%;
+            width: 100%;
+            grid-template-rows: 1.2fr 1fr;
+            row-gap: 1rem;
+
+            .topRight {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 1rem;
+
+                div {
+                    &:nth-child(1) {
+                        background-image: url("https://img2.storyblok.com/650x366/filters:format(webp):quality(70)/f/133769/2081x1171/33fb3099a0/ali-ali-mood-8.jpg");
+                    }
+
+                    &:nth-child(2) {
+                        display: grid;
+                        align-items: end;
+                        div {
+                            width: 60%;
+                            height: 80%;
+                            background-image: url("https://img2.storyblok.com/650x366/filters:format(webp):quality(70)/f/133769/2081x1171/33fb3099a0/ali-ali-mood-8.jpg");
+                        }
+                    }
+                }
+            }
+
+            .innerRight {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 1rem;
+
+                div {
+                    &:nth-child(1) {
+                        background-image: url("https://img2.storyblok.com/650x366/filters:format(webp):quality(70)/f/133769/2081x1171/33fb3099a0/ali-ali-mood-8.jpg");
+                    }
+
+                    &:nth-child(2) {
+                        width: 90%;
+                        background-image: url("https://img2.storyblok.com/650x366/filters:format(webp):quality(70)/f/133769/2081x1171/33fb3099a0/ali-ali-mood-8.jpg");
+                    }
+                }
+            }
+        }
+    }
+    
+    .bottom {
+        display: grid;
+        grid-template-columns: 1.7fr 1.2fr 1.4fr;
+        column-gap: 1rem;
+
+        div {
+            background-size: cover;
+            background-position: bottom;
+            background-repeat: no-repeat;
+            
+            &:nth-child(1) {
+                background-image: url("https://img2.storyblok.com/650x366/filters:format(webp):quality(70)/f/133769/2081x1171/33fb3099a0/ali-ali-mood-8.jpg");
+            }
+
+            &:nth-child(2) {
+                background-image: url("https://img2.storyblok.com/650x366/filters:format(webp):quality(70)/f/133769/2081x1171/33fb3099a0/ali-ali-mood-8.jpg");
+            }
+
+            &:nth-child(3) {
+                width: 70%;
+                height: 80%;
+                background-image: url("https://img2.storyblok.com/650x366/filters:format(webp):quality(70)/f/133769/2081x1171/33fb3099a0/ali-ali-mood-8.jpg");
+            }
+        }
+    }
+}

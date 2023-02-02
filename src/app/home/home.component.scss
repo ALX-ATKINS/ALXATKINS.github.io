@@ -1,4 +1,62 @@
 
+
+.phonephone {
+    margin: 10% 10%;
+    margin-bottom: 9%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3rem;
+
+    .smallphonePreview {
+        background-color: lightblue;
+
+        &:nth-child(1) {
+            transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 30, 0, 1);
+        }
+
+        &:nth-child(3) {
+            transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -30, 0, 1);
+        }
+    }
+
+    div {
+        width: 100%;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+ 
+        section {
+            height: 100%;
+            position: relative;
+            display: grid;
+            justify-items: center;
+        }
+        
+        .bgimage {
+            position: absolute;
+            top: 0;
+            z-index: 2;
+            height: 100%;
+        }
+        
+        .phoneimage {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            z-index: 1;
+            margin-top: 2%;
+        }
+        
+        .video {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            margin-top: 2%;
+        }
+    }
+}
+
 #details {
     position: absolute;
     z-index: 2;
@@ -115,71 +173,6 @@
     margin-left: 30%;
     width: 45%;
     line-height: 40px;
-}
-
-#images {
-    height: 82vh;
-    margin: 8% 0;
-    display: grid;
-    overflow: hidden;
-    grid-template-rows: 1fr 1fr;
-    row-gap: 3%;
-
-    .firstSet {
-        width: 110%;
-        transform: translateX(-0%);
-        display: grid;
-        grid-template-columns: 1fr 2.5fr 1.8fr 1fr;
-        column-gap: 1.5%;
-        align-items: flex-end;
-
-        div {
-            background-size: cover;
-            background-position: bottom;
-            background-repeat: no-repeat;
-
-            &:nth-child(1), &:nth-child(4) {
-                height: 50%;
-                background-image: url("https://img2.storyblok.com/650x366/filters:format(webp):quality(70)/f/133769/2858x1608/ea3181bca7/ali-ali-mood-1.jpg");
-            }
-            &:nth-child(2) {
-                height: 100%;
-                background-image: url("https://img2.storyblok.com/650x366/filters:format(webp):quality(70)/f/133769/2594x1460/ab9f7cff75/ali-ali-mood-2.jpg");
-            }
-            &:nth-child(3) {
-                height: 75%;
-                background-image: url("https://img2.storyblok.com/650x366/filters:format(webp):quality(70)/f/133769/2081x1171/33fb3099a0/ali-ali-mood-8.jpg");
-            }
-        }
-    }
-
-    .secondSet {
-        display: grid;
-        width: 110%;
-        transform: translateX(-9%);
-        grid-template-columns: 1fr 1.8fr 2.5fr 1fr;
-        column-gap: 1.5%;
-        align-items: flex-start;
-
-        div {
-            background-size: cover;
-            background-position: bottom;
-            background-repeat: no-repeat;
-
-            &:nth-child(1), &:nth-child(4) {
-                height: 50%;
-                background-image: url("https://img2.storyblok.com/650x366/filters:format(webp):quality(70)/f/133769/2858x1608/ea3181bca7/ali-ali-mood-1.jpg");
-            }
-            &:nth-child(2) {
-                height: 75%;
-                background-image: url("https://img2.storyblok.com/650x366/filters:format(webp):quality(70)/f/133769/2594x1460/ab9f7cff75/ali-ali-mood-2.jpg");
-            }
-            &:nth-child(3) {
-                height: 100%;
-                background-image: url("https://img2.storyblok.com/650x366/filters:format(webp):quality(70)/f/133769/2081x1171/33fb3099a0/ali-ali-mood-8.jpg");
-            }
-        }
-    }
 }
 
 .experience {

@@ -10,7 +10,6 @@ h1 {
  
 .mainOverlay {
     margin: 0 4%;
-    background-color: orange;
     height: 87vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -26,7 +25,7 @@ h1 {
         position: absolute;
 
         &:nth-child(1) {
-            transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 50, 0, 1);
+            transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 80, 0, 1);
         }
 
         &:nth-child(2) {

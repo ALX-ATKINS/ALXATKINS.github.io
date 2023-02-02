@@ -11,7 +11,7 @@ export class ProjectFourComponent {
     var tempOne = "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0,";
     var tempTwo = ", 0, 1)";
 
-    var diff = (yPosition - top) * 0.8;
+    var diff = (yPosition - top) * 1;
     var offset = Math.min(diff / height, 1);
 
     var a = document.getElementById("mainOverlayBg") || {style: {transform: ""}};
@@ -35,13 +35,13 @@ export class ProjectFourComponent {
     var a = document.getElementById("one") || {style: {transform: ""}};
     var b = document.getElementById("two") || {style: {transform: ""}};
     
-    var firstOffset = (offset * 80);
-    if (firstOffset <= 40) {
-        b.style.transform = tempOne + -1 * (40 - firstOffset) + tempTwo;
-        a.style.transform = tempOne + (40 - firstOffset) + tempTwo;
+    var firstOffset = (offset * 60);
+    if (firstOffset <= 30) {
+        b.style.transform = tempOne + -1 * (30 - firstOffset) + tempTwo;
+        a.style.transform = tempOne + (30 - firstOffset) + tempTwo;
     } else {
-        b.style.transform = tempOne + (firstOffset - 40) + tempTwo;
-        a.style.transform = tempOne + -1 * (firstOffset - 40) + tempTwo;
+        b.style.transform = tempOne + (firstOffset - 30) + tempTwo;
+        a.style.transform = tempOne + -1 * (firstOffset - 30) + tempTwo;
     }
 }
 

@@ -1,11 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-project-one',
   templateUrl: './project-one.component.html',
   styleUrls: ['./project-one.component.scss', '../recycle/scss/variables.scss']
 })
+
 export class ProjectOneComponent {
+
+  index: number = 0;
+  maxIndex: number = 15;
+
+  @ViewChild('widgetsContent') widgetsContent!: ElementRef;
+
   moveBg(top : number, yPosition : number, height : number) {
     var tempOne = "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0,";
     var tempTwo = ", 0, 1)";
@@ -24,6 +31,29 @@ export class ProjectOneComponent {
     }
   }
 
+
+  prev() {
+    if (this.index != 0) {
+      var slideChild = document.getElementById('smallipadpreview')?.scrollWidth || 0;
+
+      this.widgetsContent.nativeElement.scrollLeft -= slideChild;
+
+      this.index -= 1;
+    }
+  }
+
+  next() {
+    if (this.index != this.maxIndex) {
+      var slideChild = document.getElementById('smallipadpreview')?.scrollWidth || 0;
+      
+      this.widgetsContent.nativeElement.scrollLeft += slideChild;
+
+      this.index += 1
+    }
+  }
+
+
+
   constructor() {
     window.addEventListener('scroll', () => {
       var x = document.getElementById("mainOverlay") || {offsetTop: 0, offsetHeight: 0};
@@ -33,6 +63,8 @@ export class ProjectOneComponent {
         this.moveBg(y, window.scrollY, x.offsetHeight);
       }
     });
+
+    
   }
 
 }

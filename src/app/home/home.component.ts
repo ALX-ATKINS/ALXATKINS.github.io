@@ -48,24 +48,6 @@ export class HomeComponent {
 
   ]
 
-  moveFunction(top : number, yPosition : number, height : number) {
-    var tempOne = "translateX("
-    var tempTwo = "%)"
-
-    var diff = (yPosition - top) * 0.6;
-    var offset = Math.min(diff / height, 1);
-
-    var a = document.getElementById("firstSet") || {style: {transform: ""}};
-    var b = document.getElementById("secondSet") || {style: {transform: ""}};
-    
-    var firstOffset = (offset * 9);
-    console.log(firstOffset);
-    
-    a.style.transform = tempOne + Math.max(-9, -1 * firstOffset) + tempTwo;
-    b.style.transform = tempOne +  Math.min(0, -1 * (9 - firstOffset)) + tempTwo;
-
-  }
-
   async openExperience(choice : number) {
 
     var x = document.getElementById("experience") || {offsetTop: 0, offsetHeight: 0};
@@ -105,14 +87,6 @@ export class HomeComponent {
   }
 
   constructor() {
-    window.addEventListener('scroll', () => {
-      var x = document.getElementById("images") || {offsetTop: 0, offsetHeight: 0};
-      var y = x.offsetTop - x.offsetHeight;
-      var z = x.offsetTop + x.offsetHeight;
-      if (window.scrollY >= y && window.scrollY <= z) {
-        this.moveFunction(y, window.scrollY, x.offsetHeight);
-      }
-    });
   }
 
 }
