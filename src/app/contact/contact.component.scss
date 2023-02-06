@@ -5,6 +5,11 @@
     height: 100%;
     color: var(--white);
 
+    a {
+        color: var(--white);
+        text-decoration: none;
+    }
+
     .imageContact {
         position: absolute;
         width: 26%;
