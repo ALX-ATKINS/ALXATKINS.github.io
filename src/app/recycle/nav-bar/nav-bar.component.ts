@@ -4,12 +4,29 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-nav-bar',
   templateUrl: './nav-bar.component.html',
-  styleUrls: ['./nav-bar.component.scss']
+  styleUrls: ['./nav-bar.component.scss', './nav-bar.componentMobile.scss']
 })
 
 export class NavBarComponent {
   choice: number = 0;
   filter: number = 2;
+
+  menuOpen() {
+
+    var b = document.getElementById("fullMenu") || {style: {display: "none"}};
+    b.style.display = "grid";
+
+    
+    document.getElementsByTagName("body")[0].style.overflow = "hidden";
+  }
+
+  menuClose() {
+
+    var b = document.getElementById("fullMenu") || {style: {display: "none"}};
+    b.style.display = "none";
+
+    document.getElementsByTagName("body")[0].style.overflow = "scroll";
+  }
  
   constructor(private router: Router) {
     if (this.router.url === "/") {

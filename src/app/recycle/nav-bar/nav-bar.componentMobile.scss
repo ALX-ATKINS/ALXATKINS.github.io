@@ -1,0 +1,88 @@
+
+@media only screen and (max-width: 600px) {
+    nav {
+        padding: 0% 6%;
+        grid-template-columns: 0.7fr 1fr 0.7fr;
+
+        .current {
+            display: none;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            font-weight: 300;
+            font-size: 0.8rem;
+            column-gap: 0.8em;
+            row-gap: 0.5em;
+
+            span {
+                width: 30px;
+                background-color: var(--white);
+                height: 1.8px;
+
+                &:nth-child(2) {
+                    width: 20px;
+                }
+            }
+        }
+    }
+
+    .fullMenu, #fullMenu {
+        top: 0;
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        background-color: var(--red);
+        height: 100%;
+        align-items: center;
+        grid-template-rows: 8% 92%;
+
+        .close {
+            margin: 0 6%;
+            span {
+                font-size: 1.8em;
+            }
+        }
+
+        .details {
+            margin: 0 13%;
+            display: grid;
+            row-gap: 6vh;
+
+            p {
+                color: var(--grey);
+                text-transform: uppercase;
+            }
+
+            div {
+                display: grid;
+                row-gap: 3vh;
+                a {
+                    font-size: 8vw;
+                    color: var(--white);
+                    text-decoration: none;
+                    display: flex;
+                    position: relative;
+                    align-items: center;
+                    column-gap: 5vw;
+
+                    span {
+                        content: "";
+                        display: block;
+                        width: calc(clamp(18px, 1vw, 18px) / 2.75);
+                        height: calc(clamp(18px, 1vw, 18px) / 2.75);
+                        border-radius: 50%;
+                        top: 50%;
+                        background: var(--white);
+                        -moz-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+                        -o-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+                        -webkit-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+                        transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+                        will-change: transform;
+                    }
+                }
+            }
+        }
+    }
+}

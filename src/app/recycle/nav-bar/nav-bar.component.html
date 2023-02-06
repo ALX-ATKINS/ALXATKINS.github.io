@@ -1,5 +1,5 @@
 <nav *ngIf="filter == 1" class="changeColor">
-    <div>
+    <div class="current">
         <a class="active" href="/work" *ngIf="choice == 1">
             <p>WORK</p>
         </a>
@@ -14,14 +14,19 @@
             <p>CONTACT</p>
         </a>
     </div>
+
+    <div class="menu" id="menu" (click)="menuOpen()">
+        <span style="background-color: var(--black);"></span>
+        <span style="background-color: var(--black);"></span>
+    </div>
     
-    <div>
+    <div class="logo">
         <a href="/">
             <p>ALX ATKINS</p>
         </a>
     </div>
     
-    <div>
+    <div class="links">
         <a href="https://www.instagram.com/alx_atkins/" target="_blank">
             <p>IN</p>
         </a>
@@ -32,7 +37,7 @@
 </nav>
 
 <nav *ngIf="filter == 2">
-    <div>
+    <div class="current">
         <a class="active" href="/work" *ngIf="choice == 1">
             <p>WORK</p>
         </a>
@@ -47,14 +52,19 @@
             <p>CONTACT</p>
         </a>
     </div>
+
+    <div class="menu" id="menu" (click)="menuOpen()">
+        <span></span>
+        <span></span>
+    </div>
     
-    <div>
+    <div class="logo">
         <a href="/">
             <p>ALX ATKINS</p>
         </a>
     </div>
     
-    <div>
+    <div class="links">
         <a href="https://www.instagram.com/alx_atkins/" target="_blank">
             <p>IN</p>
         </a>
@@ -63,9 +73,10 @@
         </a>
     </div>
 </nav>
+
 
 <nav *ngIf="filter == 0" style="background-color: transparent">
-    <div>
+    <div class="current">
         <a class="active" href="/work" *ngIf="choice == 1">
             <p>WORK</p>
         </a>
@@ -80,14 +91,19 @@
             <p>CONTACT</p>
         </a>
     </div>
+
+    <div class="menu" id="menu" (click)="menuOpen()">
+        <span></span>
+        <span></span>
+    </div>
     
-    <div>
+    <div class="logo">
         <a href="/">
             <p>ALX ATKINS</p>
         </a>
     </div>
     
-    <div>
+    <div class="links">
         <a href="https://www.instagram.com/alx_atkins/" target="_blank">
             <p>IN</p>
         </a>
@@ -96,4 +112,31 @@
         </a>
     </div>
 </nav>
+
+
+<div class="fullMenu" id="fullMenu">
+    <div class="close" (click)="menuClose()">
+        <span class="material-icons">
+            close
+        </span>
+    </div>
+    <div class="details">
+        <p>Menu</p>
+        <div>
+            <a class="active" href="/work" *ngIf="choice == 1">
+                WORK<span></span>
+            </a>
+
+            <a href="/work" *ngIf="choice != 1">
+                WORK
+            </a>
+    
+            <a class="active" href="/contact" *ngIf="choice == 2">
+                CONTACT<span></span>
+            </a>
+            <a href="/contact" *ngIf="choice != 2">
+                CONTACT
+            </a>
+    </div>
+</div>
 
