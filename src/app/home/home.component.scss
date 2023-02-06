@@ -128,12 +128,19 @@
 }
 
 
+.mainImage {
+    background-image: url('../../assets/dickClark/ama/ama_7.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #68222c;
+}
+
 
 #heroBanner {
     flex: 1;
     height: 92vh;
     padding: 0 5%;
-    background-color: var(--red);
     color: var(--white);
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -161,8 +168,7 @@
                 font-weight: 400;
             }
         }
-    }
-    
+    }    
 }
 
 
@@ -233,6 +239,9 @@
     width: 100%;
     background-color: orange;
     height: 93vh;
+    background-image: url('../../assets/dickClark/ama/ama_7.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .getInTouch {

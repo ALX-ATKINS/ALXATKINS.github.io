@@ -1,0 +1,86 @@
+
+@media only screen and (max-width: 600px) {
+
+.slidepad {
+    width: 100%;
+    height: 36vh;
+    overflow: hidden;
+    margin: 4% 0%;
+    scroll-behavior: smooth;
+
+    .slidepadInner {
+        width: calc(100% + 100% * 15);
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        scroll-behavior: smooth;
+    
+        .spacer {
+            width: 0%;
+        }
+    
+        .smallipadpreview {
+            width: 100%;
+            display: grid;
+            overflow: hidden;
+            align-items: center;
+
+            section {
+                height: 75%;
+                width: 100%;
+                position: relative;
+                display: grid;
+                justify-items: center;
+            }
+            
+            .bgimage {
+                position: absolute;
+                top: 0;
+                z-index: 2;
+                height: 100%;
+            }
+            
+            .phoneimage {
+                position: absolute;
+                top: 0;
+                height: 97%;
+                z-index: 1;
+                margin-top: 1%;
+                border-radius: 6% / 6%;
+            }
+        }
+    }
+}
+
+.arrowControls {
+    margin: 0% 8%;
+    margin-bottom: 5%;
+    height: 4.5vh;
+    display: grid;
+    justify-content: flex-end;
+    align-items: center;
+
+    div {
+        display: flex;
+        column-gap: 1.5rem;
+
+        button {
+            border: none;
+            padding: 0.4rem;
+            border-radius: 50%;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+
+            &:nth-child(2) {
+                background-color: rgb(210, 210, 215, 0.64);
+            }
+            span {
+                font-size: 2rem;
+                color: #6E6E73;
+            }
+        }
+    }
+}
+
+}

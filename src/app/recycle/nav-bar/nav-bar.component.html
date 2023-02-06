@@ -1,4 +1,4 @@
-<nav *ngIf="filter" class="changeColor">
+<nav *ngIf="filter == 1" class="changeColor">
     <div>
         <a class="active" href="/work" *ngIf="choice == 1">
             <p>WORK</p>
@@ -31,7 +31,7 @@
     </div>
 </nav>
 
-<nav *ngIf="!filter">
+<nav *ngIf="filter == 2">
     <div>
         <a class="active" href="/work" *ngIf="choice == 1">
             <p>WORK</p>
@@ -63,3 +63,37 @@
         </a>
     </div>
 </nav>
+
+<nav *ngIf="filter == 0" style="background-color: transparent">
+    <div>
+        <a class="active" href="/work" *ngIf="choice == 1">
+            <p>WORK</p>
+        </a>
+        <a href="/work" *ngIf="choice != 1">
+            <p>WORK</p>
+        </a>
+
+        <a class="active" href="/contact" *ngIf="choice == 2">
+            <p>CONTACT</p>
+        </a>
+        <a href="/contact" *ngIf="choice != 2">
+            <p>CONTACT</p>
+        </a>
+    </div>
+    
+    <div>
+        <a href="/">
+            <p>ALX ATKINS</p>
+        </a>
+    </div>
+    
+    <div>
+        <a href="https://www.instagram.com/alx_atkins/" target="_blank">
+            <p>IN</p>
+        </a>
+        <a href="https://www.linkedin.com/in/alxatkins/" target="_blank">
+            <p>LI</p>
+        </a>
+    </div>
+</nav>
+

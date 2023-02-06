@@ -1,9 +1,9 @@
 
-
 .work {
-    background-color: var(--white);
-    margin-top: 4%;
     color: var(--black);
+    display: grid;
+    align-items: center;
+    min-height: 85vh;
     
     a {
         text-decoration: none;
@@ -11,7 +11,7 @@
     }
 
     h2 {
-        font-size: 0.85rem;
+        font-size: small;
         text-transform: uppercase;
         margin: 0;
         font-weight: 400;
@@ -21,7 +21,7 @@
     }
 
     div p {
-        font-size: 2.3rem;
+        font-size: xx-large;
         margin: 0;
     }
 

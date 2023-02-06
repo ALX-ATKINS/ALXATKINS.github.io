@@ -3,7 +3,7 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
 @Component({
   selector: 'app-project-one',
   templateUrl: './project-one.component.html',
-  styleUrls: ['./project-one.component.scss', '../recycle/scss/variables.scss']
+  styleUrls: ['./project-one.component.scss', '../recycle/scss/variables.scss', '../recycle/scss/variablesMobile.scss', './projectOneMobile.component.scss']
 })
 
 export class ProjectOneComponent {

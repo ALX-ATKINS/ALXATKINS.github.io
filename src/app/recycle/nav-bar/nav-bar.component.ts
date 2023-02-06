@@ -9,18 +9,19 @@ import { Router } from '@angular/router';
 
 export class NavBarComponent {
   choice: number = 0;
-  filter: boolean = false;
+  filter: number = 2;
  
   constructor(private router: Router) {
     if (this.router.url === "/") {
       this.choice = 0;
+      this.filter = 0;
     } else if (this.router.url === "/work") {
       this.choice = 1;
-      this.filter = true;
+      this.filter = 1;
     } else if (this.router.url === "/contact") {
       this.choice = 2;
     } else {
-      this.filter = true;
+      this.filter = 1;
     }
   }
 

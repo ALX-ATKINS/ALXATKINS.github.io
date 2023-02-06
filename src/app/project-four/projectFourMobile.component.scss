@@ -1,0 +1,35 @@
+
+@media only screen and (max-width: 600px) {
+    
+.phonephone {
+    margin: 7% 8%;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .smallphonePreview {
+        &:nth-child(1) {
+            transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -80, 0, 1);
+        }
+
+        &:nth-child(2) {
+            transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 80, 0, 1);
+        }
+    }
+
+    div {
+        width: 100%;
+        display: grid;
+        place-items: center;
+ 
+        section {
+            height: 82%;
+            position: relative;
+            display: grid;
+            justify-items: center;
+        }
+        
+    }
+}
+
+}
