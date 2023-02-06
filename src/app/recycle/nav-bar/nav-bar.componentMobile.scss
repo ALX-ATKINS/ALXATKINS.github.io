@@ -14,12 +14,12 @@
             font-weight: 300;
             font-size: 0.8rem;
             column-gap: 0.8em;
-            row-gap: 0.3em;
+            row-gap: 0.4em;
 
             span {
                 width: 25px;
                 background-color: var(--white);
-                height: 1.8px;
+                height: 1.6px;
 
                 &:nth-child(2) {
                     width: 20px;
